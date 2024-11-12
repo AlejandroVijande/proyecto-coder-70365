@@ -1,0 +1,26 @@
+{
+  "name": "proyecto_final",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node --no-warnings ./src/app.js",
+    "dev": "nodemon ./src/app.js",
+    "stop-linux": "killall -9 node",
+    "stop-windows": "taskkill /F /IM node.exe",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Alejandro Vijande",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1",
+    "moment": "^2.30.1",
+    "multer": "^1.4.5-lts.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "nodemon": "^3.1.7"
+  }
+}

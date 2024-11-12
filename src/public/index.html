@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>NUEVO PRODUCTO</h1>
+
+    <form action="/api/products" method="post" enctype="multipart/form-data">
+        <div>
+            <label for="title">Title</label>
+            <input type="text" id="title" name="title">
+        </div>
+        <div>
+            <label for="description">Description</label>
+            <input type="text" id="description" name="description">
+        </div>
+        <div>
+            <label for="code">Code</label>
+            <input type="number" id="code" name="code">
+        </div>
+        <div>
+            <label for="price">Price</label>
+            <input type="number" id="price" name="price">
+        </div>
+        <div>
+            <label for="stock">Stock</label>
+            <input type="number" id="stock" name="stock">
+        </div>
+        <div>
+            <label for="category">Category</label>
+            <input type="text" id="category" name="category">
+        </div>
+        <div>
+        <label for="file">Image</label>
+        <input type="file" name="file" id="file">
+        </div>
+        <input type="submit" value="Agregar">
+    </form>
+</body> 
+</html>
