@@ -1,0 +1,222 @@
+[
+	{
+		"id": 1,
+		"title": "Fender Stratocaster 2024",
+		"description": "Guitarra eléctrica de 6 cuerdas, versátil para rock, blues y más.",
+		"code": 1001,
+		"price": 799.99,
+		"status": true,
+		"stock": 25,
+		"category": "Guitarras Eléctricas",
+		"thumbnail": null
+	},
+	{
+		"id": 2,
+		"title": "Gibson Les Paul Standard",
+		"description": "Guitarra eléctrica clásica con un sonido cálido y potente.",
+		"code": 1002,
+		"price": 1999.99,
+		"status": true,
+		"stock": 10,
+		"category": "Guitarras Eléctricas",
+		"thumbnail": null
+	},
+	{
+		"id": 3,
+		"title": "Yamaha Pacifica 112V",
+		"description": "Guitarra eléctrica asequible, ideal para principiantes.",
+		"code": 1003,
+		"price": 299.99,
+		"status": true,
+		"stock": 40,
+		"category": "Guitarras Eléctricas",
+		"thumbnail": null
+	},
+	{
+		"id": 4,
+		"title": "Ibanez RG550",
+		"description": "Guitarra eléctrica de alto rendimiento con cuerpo de alder.",
+		"code": 1004,
+		"price": 799.99,
+		"status": true,
+		"stock": 12,
+		"category": "Guitarras Eléctricas",
+		"thumbnail": null
+	},
+	{
+		"id": 5,
+		"title": "Fender Jazz Bass",
+		"description": "Bajo eléctrico con un sonido claro y brillante, perfecto para jazz y rock.",
+		"code": 1005,
+		"price": 999.99,
+		"status": true,
+		"stock": 18,
+		"category": "Bajos Eléctricos",
+		"thumbnail": null
+	},
+	{
+		"id": 6,
+		"title": "Music Man StingRay 5",
+		"description": "Bajo eléctrico de 5 cuerdas, ideal para música moderna.",
+		"code": 1006,
+		"price": 1299.99,
+		"status": true,
+		"stock": 15,
+		"category": "Bajos Eléctricos",
+		"thumbnail": null
+	},
+	{
+		"id": 7,
+		"title": "Gibson Thunderbird Bass",
+		"description": "Bajo eléctrico con un diseño único y un sonido profundo.",
+		"code": 1007,
+		"price": 1499.99,
+		"status": true,
+		"stock": 8,
+		"category": "Bajos Eléctricos",
+		"thumbnail": null
+	},
+	{
+		"id": 8,
+		"title": "Tama Imperialstar Drum Kit",
+		"description": "Batería acústica con toms y bombo de 22 pulgadas, ideal para iniciantes.",
+		"code": 1008,
+		"price": 499.99,
+		"status": true,
+		"stock": 20,
+		"category": "Baterías",
+		"thumbnail": null
+	},
+	{
+		"id": 9,
+		"title": "Ludwig Classic Maple Drum Kit",
+		"description": "Kit de batería acústica de alta gama, sonido cálido y resonante.",
+		"code": 1009,
+		"price": 2499.99,
+		"status": true,
+		"stock": 6,
+		"category": "Baterías",
+		"thumbnail": null
+	},
+	{
+		"id": 10,
+		"title": "Pearl Export EXX Drum Kit",
+		"description": "Kit de batería acústica para todos los niveles, con acabados brillantes.",
+		"code": 1010,
+		"price": 899.99,
+		"status": true,
+		"stock": 18,
+		"category": "Baterías",
+		"thumbnail": null
+	},
+	{
+		"id": 11,
+		"title": "D'Addario EXL110 Cuerdas Eléctricas",
+		"description": "Juego de cuerdas para guitarra eléctrica de calibre 10-46.",
+		"code": 1011,
+		"price": 9.99,
+		"status": true,
+		"stock": 100,
+		"category": "Cuerdas",
+		"thumbnail": null
+	},
+	{
+		"id": 12,
+		"title": "Elixir Nanoweb Cuerdas para Guitarra Eléctrica",
+		"description": "Juego de cuerdas con recubrimiento de nanoweb para una mayor durabilidad.",
+		"code": 1012,
+		"price": 14.99,
+		"status": true,
+		"stock": 80,
+		"category": "Cuerdas",
+		"thumbnail": null
+	},
+	{
+		"id": 13,
+		"title": "Shure SM58 Micrófono Vocal",
+		"description": "Micrófono dinámico legendario para voz, ideal para conciertos en vivo.",
+		"code": 1013,
+		"price": 99.99,
+		"status": true,
+		"stock": 50,
+		"category": "Micrófonos",
+		"thumbnail": null
+	},
+	{
+		"id": 14,
+		"title": "Audio-Technica AT2020 Micrófono de Estudio",
+		"description": "Micrófono de condensador cardioide para grabación en estudio.",
+		"code": 1014,
+		"price": 89.99,
+		"status": true,
+		"stock": 35,
+		"category": "Micrófonos",
+		"thumbnail": null
+	},
+	{
+		"id": 15,
+		"title": "Rode NT1-A Micrófono de Condensador",
+		"description": "Micrófono de condensador de alta calidad para grabación vocal y acústica.",
+		"code": 1015,
+		"price": 229.99,
+		"status": true,
+		"stock": 12,
+		"category": "Micrófonos",
+		"thumbnail": null
+	},
+	{
+		"id": 16,
+		"title": "Fender Acoustic King",
+		"description": "Guitarra acústica con sonido claro y resonante, ideal para principiantes.",
+		"code": 1016,
+		"price": 399.99,
+		"status": true,
+		"stock": 25,
+		"category": "Guitarras Acústicas",
+		"thumbnail": null
+	},
+	{
+		"id": 17,
+		"title": "Martin D-28 Guitarra Acústica",
+		"description": "Guitarra acústica de alta gama, conocida por su increíble resonancia.",
+		"code": 1017,
+		"price": 2599.99,
+		"status": true,
+		"stock": 5,
+		"category": "Guitarras Acústicas",
+		"thumbnail": null
+	},
+	{
+		"id": 18,
+		"title": "Gretsch G2622 Streamliner",
+		"description": "Guitarra eléctrica semi-hueca con un sonido cálido y clásico.",
+		"code": 1018,
+		"price": 849.99,
+		"status": true,
+		"stock": 14,
+		"category": "Guitarras Eléctricas",
+		"thumbnail": null
+	},
+	{
+		"id": 19,
+		"title": "ESP LTD EC-1000 Guitarra Eléctrica",
+		"description": "Guitarra eléctrica con humbuckers y un diseño elegante y moderno.",
+		"code": 1019,
+		"price": 1299.99,
+		"status": true,
+		"stock": 9,
+		"category": "Guitarras Eléctricas",
+		"thumbnail": null
+	},
+	{
+		"id": 20,
+		"title": "Fender Mustang Bass",
+		"description": "Bajo eléctrico compacto con un sonido cálido, ideal para músicos jóvenes.",
+		"code": 1020,
+		"price": 549.99,
+		"status": true,
+		"stock": 15,
+		"category": "Bajos Eléctricos",
+		"thumbnail": null
+	}
+]

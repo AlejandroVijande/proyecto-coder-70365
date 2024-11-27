@@ -34,14 +34,13 @@ export default class CartManager {
             const cartFound = await this.#findOneById(id);
             return cartFound;
         } catch (error) {
-            throw new Error("Fallo al obtener carrito");
-        }
+            throw new ErrorManager(`Fallo al obtener carrito: ${error.message}`, error.code || 500);}
     }
 
     async insertOne(data) {
         try {
             const products = data?.products?.map(((item)=> {
-                return { products: Number(item.product), quantity: 1 };
+                return { product: Number(item.product), quantity: 1 };
             }));
 
             const cart = {
@@ -61,6 +60,14 @@ export default class CartManager {
     addOneProduct = async (id, productId, quantity) => {
         try {
             const cartFound = await this.#findOneById(id);
+
+            const products = await readJsonFile(paths.files, "products.json");
+            const productExists = products.some((product) => product.id === Number(productId));
+
+            if (!productExists) {
+                throw new ErrorManager("El producto no existe", 404);
+            }
+
             const productIndex = cartFound.products.findIndex((item) => item.product === Number(productId));
 
             if (productIndex >= 0) {

@@ -11,7 +11,7 @@ export default class ProductManager {
         this.#jsonFilename = "products.json";
     }
 
-    async $findOneById(id) {
+    async #findOneById(id) {
         this.#products = await this.getAll();
         const productFound = this.#products.find((item) => item.id === Number(id));
 
@@ -32,7 +32,7 @@ export default class ProductManager {
 
     async getOneById(id) {
         try {
-            const productFound = await this.$findOneById(id);
+            const productFound = await this.#findOneById(id);
             return productFound;
         } catch (error) {
             throw new ErrorManager(error.message, error.code);
@@ -43,8 +43,15 @@ export default class ProductManager {
         try {
             const { title, description, code, price, status, stock, category, thumbnail } = data;
 
-            if (!title || !description || !code || !price || !status || !stock || !category) {
+            if (!title || !description || !code || price == null || status == null || stock == null || !category) {
                 throw new ErrorManager("Faltan datos obligatorios", 400);
+            }
+
+            const allProducts = await this.getAll();
+            const isCodeUnique = !allProducts.some((product) => product.code === code);
+
+            if (!isCodeUnique) {
+                throw new ErrorManager(`El código "${code}" ya está en uso`, 409);
             }
 
             const product = {
@@ -71,7 +78,16 @@ export default class ProductManager {
     async updateOneById(id, data) {
         try {
             const { title, description, code, price, status, stock, category, thumbnail } = data;
-            const productFound = await this.$findOneById(id);
+            const productFound = await this.#findOneById(id);
+
+            if (code && code !== productFound.code) {
+                const allProducts = await this.getAll();
+                const isCodeUnique = !allProducts.some((product) => product.code === code && product.id !== id);
+
+                if (!isCodeUnique) {
+                    throw new ErrorManager(`El código "${code}" ya está en uso`, 409);
+                }
+            }
 
             const product = {
                 id: productFound.id,
@@ -97,7 +113,7 @@ export default class ProductManager {
 
     async deleteOneById(id) {
         try {
-            await this.$findOneById(id);
+            await this.#findOneById(id);
 
             const index = this.#products.findIndex((item) => item.id === Number(id));
             this.#products.splice(index, 1);

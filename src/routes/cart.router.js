@@ -14,6 +14,15 @@ router.get("/:pid", async (req, res) => {
     }
 });
 
+router.get("/", async (req, res) => {
+    try {
+        const carts = await cartManager.getAll();
+        res.status(200).json({ status: "success", payload: carts });
+    } catch (error) {
+        res.status(error.code || 500).json({ status: "error", message: error.message });
+    }
+});
+
 router.post("/", async (req, res) => {
     try {
         const cart = await cartManager.insertOne(req.body);
